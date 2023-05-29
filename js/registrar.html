@@ -11,23 +11,28 @@
     <main class="card p-4 w-25 m-auto mt-4">
         <form class="text-center">
           <img class="mb-4" src="/img/cecytem.png" alt="" width="72" height="57">
-          <h1 class="h3 mb-3 fw-normal">CREAR CUENTA</h1>
+          <h1 class="h3 mb-3 fw-normal">REGISTRO SISTEMA</h1>
       
           <div class="form-floating">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="email" class="form-control" id="correo" placeholder="name@example.com">
             <label for="floatingInput">Correo</label>
           </div>
           <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="contraseña" placeholder="Password">
             <label for="floatingPassword">Contraseña</label>
           </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="nombre" placeholder="Password">
+            <label for="floatingPassword">Nombre</label>
+          </div>
           
-          <button class="w-100 btn btn-lg btn-success my-3">Iniciar Sesion</button>
-          <a href="index.html" class="w-100 btn btn-lg btn-danger my-3">Crear Cuenta</a>
+          <button class="w-100 btn btn-lg btn-success my-3" onclick="registrarUsuario()" value="Registrar">Registrar</button>
+          <a href="index.html" class="w-100 btn btn-lg btn-danger my-3" >Iniciar secion</a>
           <p class="mt-5 mb-3 text-body-secondary">&copy; CECYTEM 2023</p>
         </form>
       </main>
 
+      <script src="appLogin.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/sweetalert2.all.min.js"></script>
 </body>
